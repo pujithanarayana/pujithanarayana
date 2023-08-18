@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Temperature Converter </title>
+<link rel="stylesheet" type="text/css" href="C:\bharatintern\tc.css">
+<script>
+function cf()
+{
+  t=parseInt(document.getElementById("one").value);
+  f=((t*(9/5))+32);
+  document.getElementById("ctof").value=f;
+ }
+function fc()
+  {
+    t=parseInt(document.getElementById("one").value);
+    c=((t-32)*(5/9));
+    document.getElementById("ftoc").value=c;
+   }
+function ck()
+   {
+     t=parseInt(document.getElementById("one").value);
+     k=(273.15+t);
+     document.getElementById("ctok").value=k;
+    }
+function fk()
+   {
+     t=parseInt(document.getElementById("one").value);
+     k=(((t-32)*(5/9))+273.15);
+     document.getElementById("ftok").value=k;
+    }
+function kc()
+    {
+      t=parseInt(document.getElementById("one").value);
+      c=(t-273.15);
+      document.getElementById("ktoc").value=c;
+     }
+ function kf()
+{
+      t=parseInt(document.getElementById("one").value);
+      f=(((t-273.15)*(9/5))+32);
+      document.getElementById("ktof").value=f;
+}
+</script>
+</head>
+<body>
+ <center><br><br>
+<h1>Temperature Converter</h1>
+  <p>Enter temperature 
+    <input id="one"><br><br><br>
+     <button onclick="cf()">Convert Celsius to Fahrenheit</button>
+     <input id="ctof"><br><br><br>
+     <button onclick="fc()">Convert Fahrenheit to Celsius</button>
+     <input id="ftoc"><br><br><br>
+     <button onclick="ck()">Convert Celsius to Kelvin</button>
+     <input id="ctok"><br><br><br>
+     <button onclick="fk()">Convert Fahrenheit to Kelvin</button>
+     <input id="ftok"><br><br><br>
+     <button onclick="kc()">Convert Kelvin to celsius</button>
+     <input id="ktoc"><br><br><br>
+     <button onclick="kf()">Convert Kelvin to Fahrenheit</button>
+     <input id="ktof"><br><br><br>
+  </p>
+ </center>
+</table>
+</body>
+</html>
