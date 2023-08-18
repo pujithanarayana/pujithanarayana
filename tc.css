@@ -1,0 +1,10 @@
+h1
+ {
+  text-color:white;
+  text-shadow: 0 0 3px white, 0 0 25px black;
+    }
+body 
+  {
+  background-image:src("A:\Users\OneDrive\Pictures\tcimg.jpg");
+  background-size:cover;
+    }
